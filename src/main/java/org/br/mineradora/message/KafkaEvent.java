@@ -26,7 +26,7 @@ public class KafkaEvent {
     @Incoming("proposal")
     public void NewKafkaEvent(ProposalDTO proposalDTO){
         LOG.info("-- Enviando nova proposta para o tópico Kafka --");
-        proposalDTO.toString();
+        LOG.info(proposalDTO.toString());
     }
 
 
